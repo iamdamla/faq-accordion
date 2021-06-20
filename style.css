@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1440px;
+}
+
+body{
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  background-image: linear-gradient(to left, hsl(273, 75%, 66%) , hsl(240, 73%, 65%)  );
+}
+.container{
+  max-width: 960px;
+  min-height: 300px;
+  margin: 0 auto;
+  padding-top: 30px;
+  margin-top: 12%;
+  background: url("images/bg-pattern-desktop.svg");
+  background-color: white;
+  border-radius: 15px;
+  display: flex; 
+}
+.position {
+  margin-left: -60px;
+  margin-top: -190px
+}
+.woman{
+  left: -10%;
+  max-height: 400px;
+  padding-top: 100px;
+  padding-right: 50px;
+  /* margin: 30px; */
+  z-index: 2;
+}
+.cube{
+  position: relative;
+  max-height: 150px;
+  left: -20px;
+  top: 350px;
+  z-index: 3;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 27px;
+  padding-bottom: 40px; 
+  letter-spacing: 3px;
+  padding-left: 40px;
+}
+p{
+  font-size: 12px;
+  color: hsl(237, 12%, 33%);
+  letter-spacing: 1px;
+  /* padding: 2rem 0; */
+  line-height: 1.2rem; 
+}
+
+.accordion{
+  padding-bottom: 100px;
+  margin-top: -100px;
+}
+
+.accordion__heading{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin-right: 20px;
+  border-top: 1px solid hsl(240, 5%, 91%);
+}
+.accordion__heading:hover {
+  cursor: pointer;
+}
+.accordion__heading:hover p {
+  color: hsl(14, 88%, 65%);
+}
+
+.accordion__details{
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s all ease;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  opacity: 0.6;
+} 
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 900px) {
+  .container{
+    max-width: 400px;
+    margin: 0 auto ;
+    margin-top: 40%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .position {
+    margin-left: -30px;
+    margin-top: -220px
+  }
+  .woman{
+    max-height: 300px;
+    max-width: 300px;
+    /* margin-top: -500px;
+    margin-right: 50%; */
+  }
+  .cube {
+    position: relative;
+    left: 100px;
+    top: -30px;
+    height: 100px;
+    width: 100px;
+  } 
+
+  h2 {
+    text-align: center;
+  }
+}
+
